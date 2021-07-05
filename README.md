@@ -1,8 +1,8 @@
-# To add new student click plus icon.
-
-# To add work and score click any name row 
-
 ## To test webpage use Netlify link https://school-mustafa.netlify.app/
+
+### To add new student click plus icon.
+### To add work and score click any name row
+
 
 
 
