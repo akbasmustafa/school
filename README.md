@@ -1,3 +1,12 @@
+# To add new student click plus icon.
+
+# To add work and score click any name row 
+
+## To test webpage use Netlify link https://school-mustafa.netlify.app/
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
