@@ -1,0 +1,6 @@
+const actions = {
+  SWITCHMODALVISIBILITY: "SWITCHMODALVISIBILITY",
+  ADDNAME: "ADDNAME",
+  ADDHOMEWORK: "ADDHOMEWORK",
+};
+export default actions;
