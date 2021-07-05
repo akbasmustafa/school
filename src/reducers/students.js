@@ -9,13 +9,16 @@ const studentsReducer = (state = [], action) => {
     case "ADDHOMEWORK":
       return state.map((student) => {
         if (student.id === action.payload.id) {
-          return {
+          console.log(action.payload);
+          const newObject = {
             ...student,
             homeworks: student.homeworks.concat({
               title: action.payload.title,
               score: action.payload.score,
             }),
           };
+          console.log(newObject);
+          return newObject;
         } else {
           return student;
         }

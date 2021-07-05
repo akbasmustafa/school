@@ -10,7 +10,7 @@ export const App = (props) => {
       <div className="App">
         <h1>School App</h1>
         <Route path="/" exact component={Home} />
-        <Route path="/AddWork" component={AddWork} />
+        <Route path="/AddWork/:id" component={AddWork} />
       </div>
     </Router>
   );

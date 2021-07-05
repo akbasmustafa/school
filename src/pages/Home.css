@@ -5,16 +5,33 @@
     justify-content: center;
     width:70%;
 }
-.row{
+.header{
     width: auto;
-    border:1px yellow solid;
+    border:1px rgb(209, 209, 197) solid;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin: 1%;
-    padding: 1%;
+    padding: 3%;
     font-family:Arial;
-	font-size:4vw;
+	font-size:3vw;
+	font-weight:bold;
+    box-shadow: 0 1px 2px 0 rgba(231, 229, 229, 0.1);
+    transition: 0.1s;
+    border-radius: 5px; /* 5px rounded corners */
+}
+.row{
+    width: auto;
+    border:1px rgb(199, 199, 155) solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1%;
+    padding: 3%;
+    font-family:Arial;
+	font-size:3vw;
 	font-weight:bold;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
     transition: 0.5s;
@@ -23,6 +40,7 @@
 
 .row:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 .myButton {
@@ -48,16 +66,4 @@
 	position:relative;
 	top:1px;
 }
-/* 
-.row:first-child{
-    width: 70%;
-    padding: 2px;
-}
-.row:nth-child(2){
-    width: 15%;
-    padding: 2px;
-}
-.row:nth-child(3){
-    width: 15%;
-    padding: 2px;
-} */
+

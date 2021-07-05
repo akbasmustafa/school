@@ -4,7 +4,6 @@ import { v4 as uuidv4 } from "uuid";
 
 import { useSelector, useDispatch } from "react-redux";
 import actions from "../actions";
-import { act } from "react-dom/cjs/react-dom-test-utils.production.min";
 
 function AddNewStudent() {
   const { isVisible } = useSelector((state) => state.states);
@@ -14,7 +13,10 @@ function AddNewStudent() {
   function handleAddName() {
     console.log(name);
     if (name.length > 0) {
-      dispatch({ type: actions.ADDNAME, payload: { id: uuidv4(), name } });
+      dispatch({
+        type: actions.ADDNAME,
+        payload: { id: uuidv4(), name: name.toUpperCase() },
+      });
       setName("");
       dispatch({ type: actions.SWITCHMODALVISIBILITY });
     } else {
